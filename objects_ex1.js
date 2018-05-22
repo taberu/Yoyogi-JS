@@ -17,6 +17,8 @@ console.log(student1);
 
 // 1.2
 // Accessing values of properties. There are two ways to access property data
+// pay attention to the string quotes on the 2nd example. 
+//
 // student1.firstName
 // -or-
 // student1["firstname"]
@@ -26,6 +28,9 @@ console.log(student1["firstName"]);
 // #### exercise
 // 1.2:  add more properties
 // Create student5 and add a property named Age and set it to a value
+
+// 1.2 test
+// print out only the new Age property of Student5
 
 
 // #### exercise
@@ -44,7 +49,7 @@ function getFullname(student){
     return fullName;
 }
 
-// 1.4 testing
+// 1.4 testing -- call getFullName for each student
 console.log(getFullname(student1));
 
 
@@ -55,14 +60,14 @@ console.log(getFullname(student1));
 //      Add two new students 
 //      student6 and student7 with unique name/test info and with a 
 //      method named FullName.  That method gets the FullName of the student. 
-//      (use the same format as the stand alone function above) 
+//      (use the same format for the string as the stand alone function above) 
 //        
 //  method name: FullName
 //         args: none (it will access properties on the object)
 //         return: string representing full name: "last, first" i.e. "Smith, Bob"
 //
 // NOTE: notice the "this" key word. "this" refers to the object and basically says
-//       use the var "Brand" tha is on "this" object.  
+//       use the var "Brand" that is on "this" object.  
 
 // example of method on object
 var car1 = { Brand: "VW", 
