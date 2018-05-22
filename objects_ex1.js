@@ -43,11 +43,22 @@ console.log(student1["firstName"]);
 var car1 = { Brand: "VW", 
              Model: "Bug",
              GetName: function() {
-                return this.Brand + " " + this.Model;
-             },
+                return this.Brand + " " + this.Model;},
             }
-// test code: print the full name of the students
+// test code: print the full name of the student5 and student6
 // i.e.
 console.log(car1.GetName());
+
+// ####
+// 1.4: add metod to student objects that retruns the average of the test scores.
+//      name: TestsScoreAvg
+//      args: none (using testscore properties on object)
+//      retrun: average (number)
+//      
+//      Loop through testscore and add the scores then divide by number of tests.     
+
+// ####
+// 1.5: Use Constructor to create objects
+// TBD
 
             
