@@ -11,7 +11,7 @@
 var student1 = {firstName: "Bob", lastName: "Smith", testScore: [90,32,56]};
 var student2 = {firstName: "Mary", lastName: "Jones", testScore: [60,92,86]};
 
-// 1.1 testing
+// 1.1 testing5
 // print the objects like
 console.log(student1);
 
@@ -31,6 +31,11 @@ console.log(student1["firstName"]);
 
 // 1.2 test
 // print out only the new Age property of Student5
+student1.height = 200;
+console.log("Student 1 height: " + student1.height);
+
+console.log("weight " + student1.weight);
+
 
 
 // #### exercise
@@ -42,15 +47,24 @@ console.log(student1["firstName"]);
 //      return: return a string that is the full name in this format:
 //            "last, first" i.e. "Smith, Bob"
 function getFullname(student){
-    var fullName;
+    //var fullName;
+ 
 
-    // do stuff to get full name
+    return student.lastName + ", " + student.firstName;
 
-    return fullName;
+    //return fullName;
+}
+
+function FuncName() {
+
 }
 
 // 1.4 testing -- call getFullName for each student
+
+//getFullname(fullName);
 console.log(getFullname(student1));
+var x = 42;
+
 
 
 // ####  
@@ -79,16 +93,51 @@ var car1 = { Brand: "VW",
 // i.e.
 console.log(car1.GetName());
 
+var student6 = {firstName: "Mary", 
+                lastName: "Jones", 
+                testScore: [60,92,86],
+                fullName: function() {
+                    return this.lastName + ", " + this.firstName;
+                }};
+
+console.log(student6.fullName());
+
+
+student6.fullName()
+
 // ####
 // 1.5: add metod to student objects that retruns the average of the test scores.
-//      name: TestsScoreAvg
+//      name: testsScoreAvg
 //      args: none (using testscore properties on object)
 //      retrun: average (number)
 //      
-//      Loop through testscore and add the scores then divide by number of tests.     
+//      Loop through testscore and add the scores then divide by number of tests. 
+
+var student7 = {firstName: "Mary", 
+                lastName: "Jones", 
+                testScore: [60,92,86],
+                Grades: {
+                    Math: "A",
+                    Bio: "C",
+                    English: "B",
+                },
+                testScoreAvg: function() {
+                    // check if there are any test scores
+                    if (this.testScore.length == 0){
+                        return 0;
+                    }
+
+                    var total = 0;
+                    for(var i = 0; i < this.testScore.length; i++){
+                        total += this.testScore[i];
+                    }
+
+                    return total / this.testScore.length;
+                }};
+
+console.log(student7.testScoreAvg());
 
 // ####
 // 1.5: Use Constructor to create objects
 // TBD
 
-            
