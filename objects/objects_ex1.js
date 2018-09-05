@@ -136,8 +136,3 @@ var student7 = {firstName: "Mary",
                 }};
 
 console.log(student7.testScoreAvg());
-
-// ####
-// 1.5: Use Constructor to create objects
-// TBD
-
