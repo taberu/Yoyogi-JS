@@ -16,4 +16,4 @@ class Student {
     }
 }
 
-module.exports = Students;
+module.exports = Student;

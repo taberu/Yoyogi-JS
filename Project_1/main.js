@@ -1,7 +1,5 @@
 const Student = require("./Student.js");
 
-
-
 var students = new Array();
 
 // test
@@ -9,6 +7,8 @@ var jack = new Student("Jack", "Smith", 1);
 var jill = new Student("Jill", "Smith", 2);
 console.log(jack.firstName);
 
+
+// stuff for project 
 function addStudent(list, student) {
     list.push(student);
 }
