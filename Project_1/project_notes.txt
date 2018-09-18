@@ -1,0 +1,34 @@
+
+Summary: 
+create a student grade management system.
+
+Features:
+1) Keep track of students in class
+2) Add new students
+3) Remove students
+4) Keep track of student test scores
+
+
+Code:
+1) Create a class for student
+   -- Properties
+   First Name: string
+   Last Name: string
+   ID: integer
+   Test Scores: array of key/value pairs
+
+   -- Methods
+   Add Test Score
+   Print Student Info (Last Name, First Name, Test Average)
+   Print Test Scores
+   Get test score average
+   Override toString() (just print first name)
+
+2) Create a list of students
+    an array of Student objects
+
+3) Create Function to add student to list
+
+4) Create Function to remove student from list
+
+6) Create Function to print student list (Last Name, First Name, Test Avgerage)

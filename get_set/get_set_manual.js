@@ -22,3 +22,5 @@ Set_Name("vulgar");
 
 console.log(name);
 console.log(Get_Name());
+
+console.log(k1.toString());
