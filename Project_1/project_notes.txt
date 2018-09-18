@@ -7,9 +7,18 @@ Features:
 2) Add new students
 3) Remove students
 4) Keep track of student test scores
+5) save class list to file and load class list from file
 
+Version 2 Features:
+1) create front end webpage to display the data
+2) 
 
 Code:
+
+0) 
+    main.js: the main program
+    student.js: class for students
+
 1) Create a class for student
    -- Properties
    First Name: string
