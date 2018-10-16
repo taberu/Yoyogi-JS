@@ -1,0 +1,45 @@
+
+Summary: 
+create a student grade management system.
+
+Features:
+1) Keep track of students in the school
+2) Add new students
+3) Remove students
+4) Keep track of student test scores
+5) save class list to file and load class list from file
+6) Create simple text based UI to manage studetns (node.js)
+7) Create html UI tpo manage students
+
+Version 2 Features:
+1) create front end webpage to display the data
+2) create a class for the student list
+
+Code:
+
+0) 
+    main.js: the main program
+    student.js: class for students
+
+1) Create a class for student
+   -- Properties
+   First Name: string
+   Last Name: string
+   Test Scores: array of key/value pairs
+
+   -- Methods
+   Add Test Score
+   Print Student Info (Last Name, First Name, Test Average)
+   Print Test Scores
+   Get test score average
+        getTestAverage
+   Override toString() (just print first name)
+
+2) Create a list of students
+    an array of Student objects
+
+3) Create Function to add student to list
+
+4) Create Function to remove student from list
+
+6) Create Function to print student list (Last Name, First Name, Test Avgerage)
