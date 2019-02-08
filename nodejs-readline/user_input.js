@@ -6,6 +6,7 @@ const rl = readline.createInterface({
 })
 
 console.log("1");
+
 rl.question('What is your favorite color? ', (answer) => {
     console.log(`${answer} is my favorite too!`);
     rl.close();
